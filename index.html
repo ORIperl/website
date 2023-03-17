@@ -1,20 +1,30 @@
 <!DOCTYPE html>
-
 <html>
 <head>
-    <title>My first website </title>
-    <link rel="stylesheet" href="style.css">
+	<title>Financial Calculator</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!--
-Inline
-Internal
-External   
--->
-<h1 style="color:white; ">This is my website</h1>
-<p style="background-color: grey;"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, eveniet illo quibusdam accusantium ea natus eaque amet culpa fuga molestias dignissimos error ab omnis, corrupti vitae modi magni sequi praesentium!</p>
-<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, eveniet illo quibusdam accusantium ea natus eaque amet culpa fuga molestias dignissimos error ab omnis, corrupti vitae modi magni sequi praesentium!</p>
-<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, eveniet illo quibusdam accusantium ea natus eaque amet culpa fuga molestias dignissimos error ab omnis, corrupti vitae modi magni sequi praesentium!</p>
-<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, eveniet illo quibusdam accusantium ea natus eaque amet culpa fuga molestias dignissimos error ab omnis, corrupti vitae modi magni sequi praesentium!</p>
+	<div class="container">
+		<h1>Financial Calculator</h1>
+		<form>
+			<label for="income">Monthly Income:</label>
+			<input type="number" id="income" name="income" placeholder="Enter your monthly income" required>
+
+			<label for="balance">Current Bank Balance:</label>
+			<input type="number" id="balance" name="balance" placeholder="Enter your current bank balance" required>
+
+			<label for="expenses">Monthly Expenses:</label>
+			<input type="number" id="expenses" name="expenses" placeholder="Enter your monthly expenses" required>
+
+			<label for="goal">Financial Goal (optional):</label>
+			<input type="number" id="goal" name="goal" placeholder="Enter your financial goal">
+
+			<button type="button" onclick="calculate()">Calculate</button>
+		</form>
+		<div id="feedback"></div>
+	</div>
+
+	<script src="script.js"></script>
 </body>
 </html>
